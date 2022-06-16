@@ -1,8 +1,7 @@
 # Early Bird Frontend code test
 
 ## Background
-
-Customers have been asking for more information around parcel.
+A SMS is sent to customers when any parcel is booked. In the SMS, a link to our application is available to help the users easily find information around the parcel.
 
 ## Instructions
 
@@ -10,16 +9,16 @@ Fork this project and continue the work
 
 ### Requirements
 
-In the banner of the page, the customer is requesting more information regarding the pickup
-Add the following information to help the customer understand.
+In the banner of the page, the customer is requesting more information regarding the pickup of the C2C
+Add the following information to help the customer.
 
-- SenderName
+- SenderName (Who is the sending entity)
 - KolliID/Tracking number of the parcel
 - PickupDate parcel
 
 ## Extra
 
-- Is there any other valuable information that can be shown in the header, if so please add appropiate data
+- Is there any other valuable information that can be shown in the header? If so please add appropiate data
 - Style the banner so its more user friendly to mobile users
 
 ## Tracking number to test on
