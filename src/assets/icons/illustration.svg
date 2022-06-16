@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="218" height="218" fill="none" viewBox="0 0 218 218">
+    <circle cx="109" cy="109" r="109" fill="#EFEFEF"/>
+    <rect width="68" height="21" x="39" y="123" fill="#DD7F4A" rx="2.608"/>
+    <rect width="68" height="21" x="39" y="149" fill="#fff" rx="2.608"/>
+    <rect width="68" height="21" x="112" y="149" fill="#fff" rx="2.608"/>
+    <path fill="#fff" fill-rule="evenodd" d="M43.324 196c-1.47-1.112-2.913-2.261-4.324-3.444v-14.948c0-1.44 1.168-2.608 2.608-2.608h62.784c1.44 0 2.608 1.168 2.608 2.608v15.784c0 1.44-1.168 2.608-2.608 2.608H43.324zM180 191.707c-1.728 1.485-3.504 2.917-5.324 4.293h-60.068c-1.44 0-2.608-1.168-2.608-2.608v-15.784c0-1.44 1.168-2.608 2.608-2.608h62.784c1.44 0 2.608 1.168 2.608 2.608v14.099zM107 217.982c-20.762-.374-40.107-6.552-56.48-16.982h53.872c1.441 0 2.608 1.168 2.608 2.608v14.374zM167.481 201c-16.11 10.262-35.098 16.409-55.481 16.96v-14.352c0-1.44 1.168-2.608 2.608-2.608h52.873z" clip-rule="evenodd"/>
+    <rect width="68" height="21" x="39" y="97" fill="#fff" rx="2.608"/>
+    <rect width="68" height="21" x="112" y="97" fill="#fff" rx="2.608"/>
+    <rect width="68" height="21" x="112" y="123" fill="#fff" rx="2.608"/>
+    <rect width="39.776" height="8.151" x="61" y="133" fill="#fff" rx="1.304"/>
+    <rect width="14.671" height="2.608" x="75.997" y="135.934" fill="#434343" rx="1.304"/>
+    <rect width="2.608" height="2.608" x="72.085" y="135.934" fill="#434343" rx="1.304"/>
+    <path stroke="#DADADA" stroke-linecap="round" stroke-width="3" d="M118.5 128.5L171.5 128.5M118.5 154.5L171.5 154.5M118.5 180.5L171.5 180.5"/>
+    <path fill="#DADADA" fill-rule="evenodd" d="M158.769 206c-2.072 1.065-4.182 2.066-6.329 3H118.5c-.828 0-1.5-.672-1.5-1.5s.672-1.5 1.5-1.5h40.269zM65.56 209c-2.147-.934-4.257-1.935-6.33-3H99.5c.828 0 1.5.672 1.5 1.5s-.672 1.5-1.5 1.5H65.56z" clip-rule="evenodd"/>
+    <path stroke="#DADADA" stroke-linecap="round" stroke-width="3" d="M46.5 180.5L99.5 180.5M46.5 154.5L99.5 154.5"/>
+    <path stroke="#B85A23" stroke-linecap="round" stroke-width="3" d="M46.5 128.5L99.5 128.5"/>
+    <path stroke="#DADADA" stroke-linecap="round" stroke-width="3" d="M46.5 102.5L99.5 102.5M118.5 102.5L171.5 102.5"/>
+    <circle cx="119" cy="136" r="2" fill="#C4C4C4"/>
+    <circle cx="47" cy="136" r="2" fill="#B85A23"/>
+    <circle cx="119" cy="110" r="2" fill="#C4C4C4"/>
+    <circle cx="47" cy="110" r="2" fill="#C4C4C4"/>
+    <circle cx="119" cy="162" r="2" fill="#C4C4C4"/>
+    <circle cx="47" cy="162" r="2" fill="#C4C4C4"/>
+    <circle cx="119" cy="188" r="2" fill="#C4C4C4"/>
+    <circle cx="47" cy="188" r="2" fill="#C4C4C4"/>
+    <circle cx="119" cy="214" r="2" fill="#C4C4C4"/>
+</svg>

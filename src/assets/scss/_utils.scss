@@ -1,0 +1,7 @@
+@use 'sass:math';
+
+@function rem($px) {
+  $remSize: math.div($px, 16px);
+
+  @return $remSize * 1rem;
+}

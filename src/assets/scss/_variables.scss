@@ -1,0 +1,135 @@
+// colors
+$color-red-strong: #a42311;
+$color-red-normal: #f36957;
+$color-red-weak: #ffeae8;
+$color-orange-strong: #ff7b4a;
+$color-orange-normal: #ffaa8a;
+$color-orange-weak: #fed5c6;
+$color-orange-subtle: #fde8e0;
+$color-brown-strong: #b85a23;
+$color-brown-normal: #dd7f4a;
+$color-brown-weak: #f8dccc;
+$color-brown-subtle: #faefe8;
+$color-black-strong: #242424;
+$color-black-normal: #595959;
+$color-black-weak: #dadada;
+$color-black-subtle: #efefef;
+$color-grey-weak: #f7f7f7;
+$color-white: #ffffff;
+$color-black: #000000;
+$color-white-50: rgba($color-white, 0.5); // rgba(255,255,255,0.5)
+
+// Functional colors
+$color-background: $color-white;
+$color-body: $color-black-strong;
+$color-label: $color-body;
+$color-label-inverted: rgba($color-white, 0.7);
+$color-placeholder: rgba($color-body, 0.5);
+$color-input-background: $color-brown-subtle;
+$color-border: $color-black-weak;
+// $color-highlight
+// $color-border
+// $color-button
+// $color-error: #bb4138;
+$color-error-light: #f3dad8;
+$color-error-row: #faeae8;
+$color-success: #0eb219;
+$color-success-light: #d2e7b5;
+$color-delivered: #e1e9d8;
+$color-not-delivered: $color-black-subtle;
+$color-returned: #ffeae8;
+$color-delayed: #232323;
+
+//Tab menu
+$color-menu-normal: $color-black-strong;
+$color-menu-active: $color-brown-strong;
+$color-menu-disabled: $color-black-normal;
+
+//Next button
+$color-button: $color-white;
+$color-button-disabled: $color-black-normal;
+$color-button-inverse: $color-black-strong;
+$color-button-inverse-bg: transparent;
+$color-button-bg: $color-black-strong;
+$color-button-bg-disabled: $color-black-weak;
+//Next button mobile
+$color-button-mobile-bg-disabled: transparent;
+
+// Borders
+$border-radius-xsmall: 4px;
+$border-radius-small: 8px;
+$border-radius-medium: 12px;
+$border-radius: 24px;
+$border-radius-round: 48px;
+// $border-radius-button: 32px; //52px???
+$border: 1px solid $color-border;
+
+// Widths
+$alpha-width: rem(425px);
+$beta-width: rem(769px);
+$charlie-width: rem(1024px);
+$delta-width: rem(1180px);
+$echo-width: rem(1280px);
+
+$site-max-width: $delta-width;
+
+// Paddings
+$spacing-xxs: rem(4px);
+$spacing-xs: rem(8px);
+$spacing-s: rem(12px);
+$spacing-m: rem(16px);
+$spacing-l: rem(20px);
+$spacing-xl: rem(24px);
+$spacing-xxl: rem(28px);
+$spacing-xxl-2: rem(32px);
+$spacing-xxl-3: rem(48px);
+$spacing-xxl-4: rem(60px);
+
+// Z-index
+$z-base: 0;
+$z-front: 5;
+$z-modal: 10;
+
+// Fonts
+@font-face {
+  font-family: 'Circular Std';
+  src: url('/fonts/CircularXXWeb-Black.woff2') format('woff2'), url('/fonts/CircularXXWeb-Black.woff') format('woff');
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'Circular Std';
+  src: url('/fonts/CircularXXSub-BoldSubset.woff2') format('woff2'),
+    url('/fonts/CircularXXSub-BoldSubset.woff') format('woff');
+  font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'Circular Std';
+  src: url('/fonts/CircularXXSub-MediumSubset.woff2') format('woff2'),
+    url('/fonts/CircularXXSub-MediumSubset.woff') format('woff');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Circular Std';
+  src: url('/fonts/CircularXXSub-BookSubset.woff2') format('woff2'),
+    url('/fonts/CircularXXSub-BookSubset.woff') format('woff');
+  font-weight: 400;
+}
+
+$font-family: 'Circular Std', sans-serif;
+
+$font-size-xxs: rem(14px);
+$font-size-xs: rem(15px);
+$font-size-s: rem(16px);
+$font-size-base: rem(18px);
+$font-size-m: rem(21px);
+$font-size-l: rem(24px);
+$font-size-xl: rem(32px);
+$font-size-xxl: rem(60px);
+
+$font-weight-default: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-black: 900;

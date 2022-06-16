@@ -1,0 +1,71 @@
+body {
+  @extend %text-body;
+  font-family: $font-family;
+  color: $color-black-normal;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-rendering: optimizeLegibility;
+  color: $color-black-strong;
+}
+
+h1 {
+  @extend %heading-XL;
+  font-weight: $font-weight-black;
+
+  & + * {
+    margin-top: $spacing-l;
+  }
+}
+
+h2 {
+  @extend %heading-L;
+  font-weight: $font-weight-medium;
+
+  & + * {
+    margin-top: $spacing-xxl-2;
+  }
+
+  & + p {
+    margin-top: $spacing-s;
+    margin-bottom: $spacing-xxl-2;
+  }
+}
+
+h3 {
+  font-size: $font-size-m;
+  font-weight: $font-weight-default;
+
+  & + * {
+    margin-top: calc(#{$spacing-l} / 2);
+  }
+}
+
+h4 {
+  font-size: $font-size-base;
+  margin: 0;
+
+  & + * {
+    margin-top: calc(#{$spacing-l} / 2);
+  }
+}
+
+// a {
+//   color: $theme-link-color;
+
+//   &:visited {
+//     color: $color-dark-grey;
+//   }
+// }
+
+p {
+  @extend %paragraph;
+}

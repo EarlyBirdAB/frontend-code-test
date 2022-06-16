@@ -1,0 +1,19 @@
+/**
+ * Use border box on all elements
+ */
+* {
+  &,
+  &:before,
+  &:after {
+    box-sizing: border-box;
+  }
+
+  outline: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: $color-brown-normal;
+  text-decoration: underline;
+}

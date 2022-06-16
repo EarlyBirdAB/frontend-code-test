@@ -1,0 +1,65 @@
+.svg-icon {
+  display: inline-block;
+  width: 1.875rem;
+  height: 1.875rem;
+  color: inherit;
+  vertical-align: middle;
+  fill: none;
+  // stroke: currentColor;
+
+  &[data-size='inherit'] {
+    width: inherit;
+    height: inherit;
+  }
+
+  &[data-size='extra-large'] {
+    width: 3.125rem;
+    height: 3.125rem;
+  }
+
+  &[data-size='large'] {
+    width: 2.625rem;
+    height: 2.625rem;
+  }
+
+  &[data-size='medium'] {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  &[data-size='small'] {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+.svg-fill {
+  fill: currentColor;
+  stroke: none;
+}
+
+.svg-no-stroke {
+  stroke: none;
+}
+
+.svg-up {
+  /* default */
+  transform: rotate(0deg);
+}
+
+.svg-right {
+  transform: rotate(90deg);
+}
+
+.svg-down {
+  transform: rotate(180deg);
+}
+
+.svg-left {
+  transform: rotate(-90deg);
+}
+
+// svg specific overrides
+.svg-icon--red-cross {
+  color: $color-white;
+}

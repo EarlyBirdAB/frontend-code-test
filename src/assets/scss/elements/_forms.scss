@@ -1,0 +1,112 @@
+.Form-input {
+  position: relative;
+  width: 100%;
+
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 3.2rem;
+
+    &--is-co {
+      margin-bottom: 1rem;
+      &[data-show-field='true'] {
+        margin-bottom: 3.2rem;
+      }
+    }
+  }
+
+  &__top + * {
+    margin-top: $spacing-m;
+  }
+
+  &__description {
+    @extend %text-s;
+  }
+
+  &__error {
+    height: 0;
+    position: absolute;
+    color: $color-red-strong;
+    font-size: $font-size-xxs;
+    bottom: -0.2rem;
+  }
+}
+
+input[type='text'],
+input[type='number'],
+input[type='email'],
+input[type='password'],
+textarea,
+select {
+  background-color: $color-brown-subtle;
+  border: 1px solid $color-brown-subtle;
+  border-radius: $border-radius;
+  padding: calc(#{$spacing-xl} / 2) $spacing-xl;
+  outline: none;
+  width: 100%;
+  height: $spacing-xxl-2 * 2;
+
+  &::placeholder,
+  &[data-placeholder='true'] {
+    color: $color-placeholder;
+  }
+  &[data-error='true'] {
+    background-color: $color-red-weak;
+    border-color: $color-red-normal;
+  }
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('@/assets/icons/arrow.svg');
+  background-position: calc(100% - 24px) center, calc(100% - 24px) center, 100% 0;
+  background-size: 16px 11px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  &::before {
+    content: none;
+  }
+}
+
+input[type='radio'] {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+
+  .Form-input__label + * {
+    margin-top: 0;
+  }
+}
+
+label,
+.label {
+  display: block;
+  font-size: $font-size-base;
+  font-weight: $font-weight-default;
+  color: $color-black-strong;
+}
+
+option {
+  font-weight: bold;
+}
+
+.Form-input__indicator[data-has-description='true'] {
+  display: flex;
+  flex-direction: column;
+}
+
+.Radio-button-immediately-description {
+  font-size: 14px;
+  font-weight: 400;
+}

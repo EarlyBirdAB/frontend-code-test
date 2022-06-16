@@ -1,0 +1,155 @@
+export const HOUSE_TYPES = {
+  APARTMENT: 'Apartment',
+  HOUSE: 'House',
+}
+
+export const HOUSE_TYPES_TEXT = {
+  [HOUSE_TYPES.APARTMENT]: 'Lägenhet',
+  [HOUSE_TYPES.HOUSE]: 'Villa/radhus',
+}
+
+export const DELIVERY_TYPES = {
+  IMMEDIATELY: 'OnDelivery',
+  AT_SEVEN: 'At7am',
+}
+
+export const DELIVERY_TYPES_TEXT = {
+  [DELIVERY_TYPES.IMMEDIATELY]: 'Direkt vid leverans',
+  [DELIVERY_TYPES.AT_SEVEN]: 'Kl. 7 på morgonen',
+}
+
+export const DELIVERY_TYPES_HOMEDELIVERY = {
+  DOOR: 'Door',
+  PERSONAL: 'Personal',
+}
+
+export const DELIVERY_TYPES_HOMEDELIVERY_TEXT = {
+  [DELIVERY_TYPES_HOMEDELIVERY.DOOR]: 'Lämna paketet vid min dörr',
+  [DELIVERY_TYPES_HOMEDELIVERY.PERSONAL]: 'Jag vill ta emot paketet personligen',
+}
+
+export const ARRIVAL_MESSAGE = {
+  DOORBELL: 'Doorbell',
+  KNOCK: 'Knock',
+}
+
+export const ARRIVAL_MESSAGE_TEXT = {
+  [ARRIVAL_MESSAGE.DOORBELL]: 'Jag vill att budet ringer på dörren',
+  [ARRIVAL_MESSAGE.KNOCK]: 'Jag vill att budet knackar på dörren',
+}
+
+export const FLOORS = [-2, -1, '0 (BV)', 1, 2, 3, 4, 5, 6, 7, 8, 9, '10 eller högre', 'Annat/övrigt']
+
+export const NETWORK_STATES = {
+  WAITING: 'waiting',
+  GETTING: 'getting',
+  SUBMITTING: 'submitting',
+  SUCCESS: 'success',
+  ERROR: 'error',
+}
+
+export const PATHS = {
+  ROOT: '/',
+  CONFIRM: '/oversikt',
+  HOME_DELIVERY: {
+    path: '/hemleverans',
+    COMPLETE_INFORMATION: 'komplettera-uppgifter',
+    CHOOSE_DELIVERY_TYPE: 'leveransmetod',
+    CHOOSE_TIME: 'tid',
+    CONFIRM_DELIVERY: 'bekrafta-uppgifter',
+    THANKS: 'tack',
+  },
+  PICKUP: {
+    path: '/upphamtning',
+    CHOOSE_TIME: 'tid',
+    INFO: 'information',
+    COMPLETE_INFORMATION: 'komplettera-uppgifter',
+    CONFIRM_DELIVERY: 'bekrafta-uppgifter',
+    THANKS: 'tack',
+  },
+}
+
+export const PRODUCT_TYPES = {
+  HOME_DELIVERY: 8930,
+  MAIL_DELIVERY: 8900,
+  PICKUP: 8945,
+  RETURN: 8944,
+}
+
+export const EVENT_CODES = {
+  BOOKED: 1,
+  DELIVERED: 2,
+  FAILED_1: 4, // Todo: Name them something more appropriate
+  UNKNOWN_RECIPIENT: 6,
+  MISSING: 8,
+  RETURN: 10,
+  FAILED_KEY: 14,
+  FAILED_2: 15, // Todo: Name them something more appropriate
+  LOST: 17,
+  LEG_MISSING: 19,
+  DELIVERY_STARTED: 20,
+  DELIVERY_SOON: 21,
+  FAILED_PERSONAL: 23,
+  DELAYED: 27,
+  UNKNOWN_RECIPIENT_2: 28,
+  FAILED_KEY_2: 29,
+  LEG_MISSING_2: 30,
+  FAILED_PERSONAL_2: 31,
+  DELAYED_2: 32,
+  DELAYED_3: 33,
+  DELAYED_4: 34,
+  PICKED_UP_RETURN: 37,
+  FAILED_PICKUP: 38,
+  FAILED_PICKUP_MISSING: 39,
+  FAILED_PICKUP_PACKAGING: 40,
+}
+
+export const FAILED_DELIVERIES = [
+  EVENT_CODES.UNKNOWN_RECIPIENT,
+  EVENT_CODES.FAILED_KEY,
+  EVENT_CODES.LEG_MISSING,
+  EVENT_CODES.FAILED_PERSONAL,
+  EVENT_CODES.UNKNOWN_RECIPIENT_2,
+  EVENT_CODES.FAILED_KEY_2,
+  EVENT_CODES.LEG_MISSING_2,
+  EVENT_CODES.FAILED_PERSONAL_2,
+  EVENT_CODES.DELAYED_2,
+  EVENT_CODES.FAILED_PICKUP,
+  EVENT_CODES.FAILED_PICKUP_MISSING,
+  EVENT_CODES.FAILED_PICKUP_PACKAGING,
+  EVENT_CODES.FAILED_1,
+  EVENT_CODES.FAILED_2,
+]
+
+export const TRACKING_IN_PROGRESS = [
+  EVENT_CODES.UNKNOWN_RECIPIENT,
+  EVENT_CODES.RETURN,
+  EVENT_CODES.FAILED_KEY,
+  EVENT_CODES.LEG_MISSING,
+  EVENT_CODES.DELIVERY_STARTED,
+  EVENT_CODES.FAILED_PERSONAL,
+]
+
+export const DELAYED_DELIVERIES = [
+  EVENT_CODES.MISSING,
+  EVENT_CODES.DELAYED,
+  EVENT_CODES.DELAYED_3,
+  EVENT_CODES.DELAYED_4,
+]
+
+export const RETURNED_DELIVERIES = [EVENT_CODES.RETURN, EVENT_CODES.LOST]
+
+export default {
+  HOUSE_TYPES,
+  HOUSE_TYPES_TEXT,
+  DELIVERY_TYPES,
+  DELIVERY_TYPES_TEXT,
+  FLOORS,
+  NETWORK_STATES,
+  PRODUCT_TYPES,
+  EVENT_CODES,
+  FAILED_DELIVERIES,
+  TRACKING_IN_PROGRESS,
+  DELAYED_DELIVERIES,
+  RETURNED_DELIVERIES,
+}
