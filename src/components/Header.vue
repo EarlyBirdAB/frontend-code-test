@@ -9,10 +9,16 @@
 
         <div class="Header__details" if="isPickup">
           <div>
+            <p class="Header__label">Hämtas upp</p>
+            {{ `${formattedArrivalTime.day} 01:00–07:00` }}
+          </div>
+          <div>
             <p class="Header__label">Kolli-ID</p>
+            {{ validation }}
           </div>
           <div>
             <p class="Header__label">Hämtas från</p>
+            {{ sender.name }}
           </div>
           <div></div>
           <Btn class="Header__button" data-type="transparent" @clicked="toggleAddressInfoModal"
@@ -64,8 +70,18 @@ export default {
     }
   },
   computed: {
-    ...mapState(['barCode', 'metrics', 'receiver', 'sender', 'deliveryDelayed']),
+    ...mapState([
+      'barCode',
+      'metrics',
+      'receiver',
+      'sender',
+      'deliveryDelayed',
+      'validation',
+      'arrivalTime',
+      'deliveredAt',
+    ]),
     ...mapGetters(['isHomeDelivery', 'formattedArrivalTime', 'isPickup', 'isDelivered', 'isCollectedAt']),
+
     formattedWeight() {
       if (!this.metrics.weightInGrams) return
       return this.metrics.weightInGrams
