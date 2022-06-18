@@ -70,7 +70,7 @@ export default {
     }
   },
   computed: {
-    ...mapState(['barCode', 'metrics', 'receiver', 'sender', 'deliveryDelayed', 'arrivalTime', 'deliveredAt']),
+    ...mapState(['barCode', 'metrics', 'receiver', 'sender', 'deliveryDelayed', 'arrivalTime']),
     ...mapGetters(['isHomeDelivery', 'formattedArrivalTime', 'isPickup', 'isDelivered', 'isCollectedAt']),
 
     formattedWeight() {
