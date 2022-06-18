@@ -19,6 +19,7 @@
           <div>
             <p class="Header__label">Hämtas upp</p>
             {{ `${formattedArrivalTime.day} 01:00–07:00` }}
+            <p class="Header__info hide-mobile" v-if="showEditMessage">Tiden går fortfarande att ändra</p>
           </div>
           <div></div>
           <span class="Header__button" data-type="transparent" @click="toggleAddressInfoModal"
@@ -70,7 +71,7 @@ export default {
     }
   },
   computed: {
-    ...mapState(['barCode', 'metrics', 'receiver', 'sender', 'deliveryDelayed', 'arrivalTime']),
+    ...mapState(['canEdit', 'barCode', 'metrics', 'receiver', 'sender', 'deliveryDelayed', 'arrivalTime']),
     ...mapGetters(['isHomeDelivery', 'formattedArrivalTime', 'isPickup', 'isDelivered', 'isCollectedAt']),
 
     formattedWeight() {
@@ -94,6 +95,9 @@ export default {
       }
 
       return this.isDelivered ? 'Levererad' : 'Beräknad leverans'
+    },
+    showEditMessage() {
+      return this.isDelivered || this.isReturned || !this.canEdit ? false : true
     },
   },
   methods: {
@@ -274,6 +278,11 @@ export default {
         padding-left: 0;
       }
     }
+  }
+
+  &__info {
+    opacity: 0.9;
+    font-size: $font-size-xxs;
   }
 
   &__button[data-type='transparent'] {
