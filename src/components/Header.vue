@@ -9,20 +9,20 @@
 
         <div class="Header__details" if="isPickup">
           <div>
-            <p class="Header__label">Hämtas upp</p>
-            {{ `${formattedArrivalTime.day} 01:00–07:00` }}
-          </div>
-          <div>
             <p class="Header__label">Kolli-ID</p>
-            {{ validation }}
+            {{ barCode }}
           </div>
           <div>
             <p class="Header__label">Hämtas från</p>
             {{ sender.name }}
           </div>
+          <div>
+            <p class="Header__label">Hämtas upp</p>
+            {{ `${formattedArrivalTime.day} 01:00–07:00` }}
+          </div>
           <div></div>
-          <Btn class="Header__button" data-type="transparent" @clicked="toggleAddressInfoModal"
-            >Varför syns inte min adress?</Btn
+          <span class="Header__button" data-type="transparent" @click="toggleAddressInfoModal"
+            >Varför syns inte min adress?</span
           >
         </div>
       </div>
@@ -70,16 +70,7 @@ export default {
     }
   },
   computed: {
-    ...mapState([
-      'barCode',
-      'metrics',
-      'receiver',
-      'sender',
-      'deliveryDelayed',
-      'validation',
-      'arrivalTime',
-      'deliveredAt',
-    ]),
+    ...mapState(['barCode', 'metrics', 'receiver', 'sender', 'deliveryDelayed', 'arrivalTime', 'deliveredAt']),
     ...mapGetters(['isHomeDelivery', 'formattedArrivalTime', 'isPickup', 'isDelivered', 'isCollectedAt']),
 
     formattedWeight() {
@@ -183,13 +174,12 @@ export default {
   }
 
   &__details {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     margin-top: $spacing-xl;
-    grid-gap: $spacing-s;
+    margin-bottom: $spacing-s;
     font-weight: $font-weight-bold;
 
     @include media-from($charlie-width) {
+      display: grid;
       grid-template-columns: repeat(5, 1fr);
       grid-gap: $spacing-l;
     }
@@ -287,8 +277,10 @@ export default {
   }
 
   &__button[data-type='transparent'] {
-    grid-column: 1/3;
-    transition: 0.2s ease-in-out margin;
+    font-weight: $font-weight-default;
+    font-size: $font-size-s;
+    text-decoration: underline;
+    cursor: pointer;
 
     @include media-from($charlie-width) {
       display: none;
